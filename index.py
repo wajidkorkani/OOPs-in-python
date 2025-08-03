@@ -1,5 +1,5 @@
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name="John", age=49):
         self.name = name
         self.age = age
     
@@ -9,3 +9,5 @@ class Person:
 person1 = Person("Alice", 30)
 print(person1.greet())
 
+person2 = Person()
+print(person2.greet())
